@@ -1,0 +1,21 @@
+{
+  "name": "dragster-avocode-fork",
+  "version": "1.0.0",
+  "description": "Better HTML5 drag events",
+  "main": "lib/dragster.js",
+  "scripts": {
+    "build": "./node_modules/.bin/coffee -o lib/ -cw src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avocode/dragster.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avocode/dragster/issues"
+  },
+  "homepage": "https://github.com/avocode/dragster",
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  }
+}
