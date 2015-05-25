@@ -51,6 +51,10 @@ class Dragster
     @first = false
     @second = false
 
+  reset: ->
+    @first = false
+    @second = false
+
 if typeof module == 'undefined'
   window.Dragster = Dragster
 else
