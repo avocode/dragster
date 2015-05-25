@@ -1,6 +1,6 @@
 {
   "name": "dragster-avocode-fork",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Better HTML5 drag events",
   "main": "lib/dragster.js",
   "scripts": {
