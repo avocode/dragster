@@ -47,7 +47,6 @@ class Dragster
 
   drop: ( event ) =>
     event.preventDefault()
-    event.stopPropagation()
     @first = false
     @second = false
 
