@@ -12,6 +12,7 @@ class Dragster
 
   dragenter: ( event ) =>
     return if event.relatedTarget and event.target is event.relatedTarget
+    return if !event.relatedTarget and !event.timeStamp
 
     if @first
       @second = true
