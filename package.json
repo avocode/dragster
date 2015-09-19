@@ -5,7 +5,7 @@
   "main": "lib/dragster.js",
   "scripts": {
     "build": "./node_modules/.bin/coffee -o lib/ -cw src/",
-    "prepublish": "./node_modules/.bin/coffee -o lib/ -o src/"
+    "prepublish": "./node_modules/.bin/coffee -o lib/ src/"
   },
   "repository": {
     "type": "git",
