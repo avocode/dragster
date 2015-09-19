@@ -4,11 +4,14 @@ class Dragster
       @first = false
       @second = false
 
-      @el.addEventListener "dragenter", @dragenter, false
+      @el.addEventListener "dragenter", @dragenter, true
       @el.addEventListener "dragleave", @dragleave, false
       @el.addEventListener "drop", @drop, false
     else
-      throw new Error('Your browser does not support CustomEvent. Include polyfill like this https://www.npmjs.com/package/custom-event-polyfill.')
+      throw new Error
+      '''Your browser does not support CustomEvent.
+      Include polyfill like this
+      https://www.npmjs.com/package/custom-event-polyfill.'''
 
   dragenter: ( event ) =>
     return if event.relatedTarget and event.target is event.relatedTarget

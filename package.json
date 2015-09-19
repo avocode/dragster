@@ -4,7 +4,8 @@
   "description": "Better HTML5 drag events",
   "main": "lib/dragster.js",
   "scripts": {
-    "build": "./node_modules/.bin/coffee -o lib/ -cw src/"
+    "build": "./node_modules/.bin/coffee -o lib/ -cw src/",
+    "prepublish": "./node_modules/.bin/coffee -o lib/ -cw src/"
   },
   "repository": {
     "type": "git",
