@@ -4,7 +4,7 @@ class Dragster
       @first = false
       @second = false
 
-      @el.addEventListener "dragenter", @dragenter, true
+      @el.addEventListener "dragenter", @dragenter, false
       @el.addEventListener "dragleave", @dragleave, false
       @el.addEventListener "drop", @drop, false
     else
@@ -14,6 +14,7 @@ class Dragster
       https://www.npmjs.com/package/custom-event-polyfill.'''
 
   dragenter: ( event ) =>
+    event.stopPropagation()
     return if event.relatedTarget and event.target is event.relatedTarget
     return if !event.relatedTarget and !event.timeStamp
 
@@ -28,6 +29,7 @@ class Dragster
           dataTransfer: event.dataTransfer
 
   dragleave: ( event ) =>
+    event.stopPropagation()
     if @second
       @second = false
     else if @first
